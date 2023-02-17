@@ -1,0 +1,64 @@
+﻿@{
+	ViewData["Title"] = "Contact";
+
+	<meta charset="UTF-8">
+
+
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Contactpagina</title>
+		<link rel="stylesheet" href="~/css/contact.css">
+		<script defer src="~/js/contact.js"></script>
+
+
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	</head>
+}
+
+
+
+<body>
+
+	<div class="page">
+		<section class="contact">
+
+			<h1>Contact opnemen Tristan Jansen</h1>
+
+			<form action="" method="post" class="form-contactpagina">
+
+				<div class="form-contactpagina__inputelement fx-col">
+					<label for="name">Onderwerp: </label>
+					<input type="text" name="onderwerp" id="onderwerp" required>
+				</div>
+
+				<div class="form-contactpagina__inputelement fx-col">
+					<label for="email">Email: </label>
+					<input type="email" name="email" id="email" required>
+				</div>
+
+				<div class="form-contactpagina__inputelement fx-col">
+					<label for="email">TelefoonNummer (optioneel): </label>
+					<input type="tel" name="telnr" id="telnr" pattern="[0-9]{10}">
+					<small>Voer geen streepjes tussen de getallen in</small>
+				</div>
+
+				<div class="form-contactpagina__inputelement fx-col">
+					<label for="call-date">Laat hier je bericht achter:</label>
+					<input name="bericht" type="text" id="bericht" maxlength="200">
+				</div>
+
+				<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+				<div class="g-recaptcha" data-sitekey="6LenO4gkAAAAAJzpSi4wwiZW8yOZ-cT5ZKe7Gr98"></div>
+
+				<div class="form-contactpagina__inputelement">
+					<input type="submit" value="Verstuur!">
+				</div>
+			</form>
+		</section>
+	</div>
+
+</body>
+
+
